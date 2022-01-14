@@ -56,12 +56,11 @@ export default function A() {
         </label><br /> */}
 
         <div className="mb-3">
-            <label for="name" className="form-label">friends name</label>
+            <lable for="name" className="form-label">friends name</lable>
             <input type="text" className="form-control" id="name" aria-describedby="emailHelp"/>
     
        </div>
-  
-        
+
         <input type="button" onClick={ myFunction } name="studentName" value="friend" />
       </form>
     </div>
