@@ -38,7 +38,7 @@ export default function A() {
       body:JSON.stringify(data)
     }).then((d)=>{
       console.log(d.status);
-      if(d.status == 200){
+      if(d.status === 200){
         swal("Good job!", "Data  Successfully", "success");
       }
     }).catch(()=>{}).finally(()=>{});
@@ -51,11 +51,9 @@ export default function A() {
     <div>
       { studentName } 
       <form className='w-25 offset-3'  value={ studentName } onChange={ (e)=>{ setStudentName(e.target.value) }  } >
-        {/* <label  >friends Name:<br />
-          <input type="text"/>
-        </label><br /> */}
+      
 
-        <div className="mb-3">
+         <div className="mb-3">
             <lable for="name" className="form-label">friends name</lable>
             <input type="text" className="form-control" id="name" aria-describedby="emailHelp"/>
     
@@ -63,6 +61,7 @@ export default function A() {
 
         <input type="button" onClick={ myFunction } name="studentName" value="friend" />
       </form>
-    </div>
+    </div> 
   )
 }
+  
